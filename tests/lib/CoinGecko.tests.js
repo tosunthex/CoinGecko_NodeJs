@@ -53,6 +53,17 @@ describe('CoinGecko', function () {
   });
   
 
+  describe('Simple Supported vs Currencies',function (){
+    before(function (done){
+      CoinGeckoClient.simple.supportedVsCurrencies()
+            .then((data) => {
+                          this.data = data;
+                          done()
+      });
+    });
+
+    shared.shouldBeAValidRequest();
+  });
   
 
 });
