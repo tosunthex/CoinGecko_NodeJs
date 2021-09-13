@@ -22,6 +22,10 @@ describe('CoinGecko', function () {
 
     shared.shouldBeAValidRequest(this.data);
   });
+});
+
+
+describe('Simple',function(){
 
   describe('Simple Token Price',function (){
     before(function (done){
@@ -64,6 +68,119 @@ describe('CoinGecko', function () {
 
     shared.shouldBeAValidRequest();
   });
-  
 
 });
+
+describe('Coins',function() {
+  
+  describe('Coins List',function(){
+    before(function(done){
+      CoinGeckoClient.coins.list().then((data) => {
+        this.data = data
+        done()
+        })
+      })
+
+    shared.shouldBeAValidRequest();
+  })
+
+  describe('Coin Markets',function(){
+    before(function(done){
+      CoinGeckoClient.coins.markets({
+        vs_currency : 'usd',
+        ids : ['ethereum','bitcoin']
+      }).then((data) => {
+        this.data = data
+        done()
+        })
+      })
+
+    shared.shouldBeAValidRequest();
+  })
+
+  describe('Coin By Id',function(){
+    before(function(done){
+      CoinGeckoClient.coins.coinById({
+        id : ['ethereum']
+      }).then((data) => {
+        this.data = data
+        done()
+        })
+      })
+
+    shared.shouldBeAValidRequest();
+  })
+
+  describe('Tickers By Id',function(){
+    before(function(done){
+      CoinGeckoClient.coins.tickersById({
+        id : 'ethereum',
+        tickersById : ['binance','ftx_spot']        
+      }).then((data) => {
+        this.data = data
+        done()
+        })
+      })
+
+    shared.shouldBeAValidRequest();
+  })
+
+  describe('History By Id',function(){
+    before(function(done){
+      CoinGeckoClient.coins.tickersById({
+        id : 'ethereum',
+        date : '12.09.2021'
+      }).then((data) => {
+        this.data = data
+        done()
+        })
+      })
+
+    shared.shouldBeAValidRequest();
+  })
+
+  describe('Market Chart By Id',function(){
+    before(function(done){
+      CoinGeckoClient.coins.marketChartById({
+        id : 'ethereum',
+        vs_currency : 'usd',
+        days : '1'
+      }).then((data) => {
+        this.data = data
+        done()
+        })
+      })
+
+    shared.shouldBeAValidRequest();
+  })
+
+  describe('Market Chart Range By Id',function(){
+    before(function(done){
+      CoinGeckoClient.coins.marketChartRangeById({
+        id : 'ethereum',
+        vs_currency : 'usd',
+        from : '1392577232',
+        to : '1422577232'
+      }).then((data) => {
+        this.data = data
+        done()
+        })
+      })
+
+    shared.shouldBeAValidRequest();
+  })   
+
+  describe('Status Update By Id',function(){
+    before(function(done){
+      CoinGeckoClient.coins.statusUpdateById({
+        id : 'ethereum'
+      }).then((data) => {
+        this.data = data
+        done()
+        })
+      })
+
+    shared.shouldBeAValidRequest();
+  })   
+})
+
