@@ -184,3 +184,63 @@ describe('Coins',function() {
   })   
 })
 
+describe('Contract',function(){
+  describe('Get Coin Info',function(){
+    before(function(done){
+      CoinGeckoClient.contract.getCoinInfo({
+        id : 'ethereum',
+        contract_address : '0x0D8775F648430679A709E98d2b0Cb6250d2887EF'
+      }).then((data) => {
+        this.data = data
+        done()
+        })
+      })
+
+    shared.shouldBeAValidRequest();
+  }),
+  describe('Get Coin Info',function(){
+    before(function(done){
+      CoinGeckoClient.contract.getCoinInfo({
+        id : 'ethereum',
+        contract_address : '0x0D8775F648430679A709E98d2b0Cb6250d2887EF'
+      }).then((data) => {
+        this.data = data
+        done()
+        })
+      })
+
+    shared.shouldBeAValidRequest();
+  }),
+  describe('Get Market Chart',function(){
+    before(function(done){
+      CoinGeckoClient.contract.getMarketChart({
+        id : 'ethereum',
+        contract_address : '0x0D8775F648430679A709E98d2b0Cb6250d2887EF',
+        vs_currency : 'usd',
+        days : '1'
+      }).then((data) => {
+        this.data = data
+        done()
+        })
+      })
+
+    shared.shouldBeAValidRequest();
+  }),
+  describe('Get Market Chart Range',function(){
+    before(function(done){
+      CoinGeckoClient.contract.getMarketChartRange({
+        id : 'ethereum',
+        contract_address : '0x0D8775F648430679A709E98d2b0Cb6250d2887EF',
+        vs_currency : 'usd',
+        from : '1577836800',
+        to : '1592611200'
+      }).then((data) => {
+        this.data = data
+        done()
+        })
+      })
+
+    shared.shouldBeAValidRequest();
+  })
+})
+
