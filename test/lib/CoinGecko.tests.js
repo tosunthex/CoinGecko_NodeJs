@@ -182,14 +182,13 @@ describe('Coins',function() {
 
     shared.shouldBeAValidRequest();
   })   
-})
 
-describe('Contract',function(){
-  describe('Get Coin Info',function(){
+  describe('OHLC By Id',function(){
     before(function(done){
-      CoinGeckoClient.contract.getCoinInfo({
+      CoinGeckoClient.coins.ohlcById({
         id : 'ethereum',
-        contract_address : '0x0D8775F648430679A709E98d2b0Cb6250d2887EF'
+        vs_currency : 'usd',
+        days : '1'
       }).then((data) => {
         this.data = data
         done()
@@ -197,7 +196,10 @@ describe('Contract',function(){
       })
 
     shared.shouldBeAValidRequest();
-  }),
+  })   
+})
+
+describe('Contract',function(){
   describe('Get Coin Info',function(){
     before(function(done){
       CoinGeckoClient.contract.getCoinInfo({
@@ -243,4 +245,15 @@ describe('Contract',function(){
     shared.shouldBeAValidRequest();
   })
 })
+
+describe('Asset Platform',function(){
+  before(function(done){
+    CoinGeckoClient.assetPlatform().then((data) => {
+      this.data = data
+      done()
+      })
+    })
+
+  shared.shouldBeAValidRequest();
+})   
 
