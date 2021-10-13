@@ -257,3 +257,29 @@ describe('Asset Platform',function(){
   shared.shouldBeAValidRequest();
 })   
 
+describe('Categories', function () {
+  
+  describe('Categories List', function () {
+    before(function (done) {
+      CoinGeckoClient.categories.listCategories().then((data) => {
+        this.data = data;
+        done();
+      });
+    });
+
+    shared.shouldBeAValidRequest(this.data);
+  });
+
+  describe('Categories List With Market Data', function () {
+    before(function (done) {
+      CoinGeckoClient.categories.listCategoriesWithMarketData().then((data) => {
+        this.data = data;
+        done();
+      });
+    });
+
+    shared.shouldBeAValidRequest(this.data);
+  });
+
+});
+

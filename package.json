@@ -11,13 +11,12 @@
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.3.4",
-    "mocha": "^6.2.3"
+    "mocha": "^9.1.2"
   },
   "directories": {
     "lib": "lib",
     "test": "tests"
   },
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tosunthex/CoinGecko_NodeJs.git"
