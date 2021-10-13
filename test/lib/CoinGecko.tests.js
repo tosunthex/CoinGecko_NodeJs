@@ -272,7 +272,9 @@ describe('Categories', function () {
 
   describe('Categories List With Market Data', function () {
     before(function (done) {
-      CoinGeckoClient.categories.listCategoriesWithMarketData().then((data) => {
+      CoinGeckoClient.categories.listCategoriesWithMarketData({
+        order : "market_cap_asc"
+      }).then((data) => {
         this.data = data;
         done();
       });
