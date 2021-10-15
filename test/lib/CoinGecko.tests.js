@@ -384,3 +384,39 @@ describe('Finance',function(){
   })
 
 })
+
+describe('Index',function(){
+  
+  describe('List all Market Indexes',function(){
+    before(function(done){
+      CoinGeckoClient.index.indexes().then((data)=>{
+        this.data = data;
+        done();
+      })
+    })
+    shared.shouldBeAValidRequest(this.data)
+  })
+
+  describe('Get MArket Index By Market Id',function(){
+    before(function(done){
+      CoinGeckoClient.index.indexesByMarketIdandId({
+        market_id : 'ftx',
+        id : 'ADA'
+      }).then((data)=>{
+        this.data = data;
+        done();
+      })
+    })
+    shared.shouldBeAValidRequest(this.data)
+  })
+
+  describe('List Market Indexes Id and Name',function(){
+    before(function(done){
+      CoinGeckoClient.index.indexesList().then((data)=>{
+        this.data = data;
+        done();
+      })
+    })
+    shared.shouldBeAValidRequest(this.data)
+  })
+})
