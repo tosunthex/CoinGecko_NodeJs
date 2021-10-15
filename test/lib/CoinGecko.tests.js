@@ -359,3 +359,28 @@ describe('Exchanges',function(){
   })
 
 })
+
+
+describe('Finance',function(){
+  
+  describe('Finance Platforms',function(){
+    before(function(done){
+      CoinGeckoClient.finance.financePlatforms().then((data)=>{
+        this.data = data;
+        done();
+      })
+    })
+    shared.shouldBeAValidRequest(this.data)
+  })
+
+  describe('Finance Products',function(){
+    before(function(done){
+      CoinGeckoClient.finance.financeProducts().then((data)=>{
+        this.data = data;
+        done();
+      })
+    })
+    shared.shouldBeAValidRequest(this.data)
+  })
+
+})
