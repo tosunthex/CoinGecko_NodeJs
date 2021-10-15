@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/tosunthex/CoinGecko_NodeJs/issues"
   },
-  "homepage": "https://github.com/tosunthex/CoinGecko_NodeJs#readme"
+  "homepage": "https://github.com/tosunthex/CoinGecko_NodeJs#readme",
+  "dependencies": {
+    "nyc": "^15.1.0"
+  }
 }

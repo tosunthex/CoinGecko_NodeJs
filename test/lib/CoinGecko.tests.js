@@ -285,3 +285,77 @@ describe('Categories', function () {
 
 });
 
+describe('Exchanges',function(){
+  
+  describe('List All Exchanges',function(){
+    before(function(done){
+      CoinGeckoClient.exchanges.exchanges().then((data)=>{
+        this.data = data;
+        done();
+      })
+    })
+    shared.shouldBeAValidRequest(this.data)
+  })
+
+  describe('List All Market Id and Name',function(){
+    before(function(done){
+      CoinGeckoClient.exchanges.exchangesList().then((data)=>{
+        this.data = data;
+        done();
+      })
+    })
+    shared.shouldBeAValidRequest(this.data)
+  })
+
+  describe('Get Exchange Volume in BTC',function(){
+    before(function(done){
+      CoinGeckoClient.exchanges.exchangesById({
+        id : 'binance'
+      }).then((data)=>{
+        this.data = data;
+        done();
+      })
+    })
+    shared.shouldBeAValidRequest(this.data)
+  })
+
+  describe('Get Exchange Tickers',function(){
+    before(function(done){
+      CoinGeckoClient.exchanges.exchangesTickerById({
+        id : 'binance',
+        coin_ids:'avalanche-2'
+      }).then((data)=>{
+        this.data = data;
+        done();
+      })
+    })
+    shared.shouldBeAValidRequest(this.data)
+  })
+
+  describe('Get Status Updates',function(){
+    before(function(done){
+      CoinGeckoClient.exchanges.exchangesTickerById({
+        id : 'binance',
+        coin_ids:'avalanche-2'
+      }).then((data)=>{
+        this.data = data;
+        done();
+      })
+    })
+    shared.shouldBeAValidRequest(this.data)
+  })
+
+  describe('Get Volume Chart',function(){
+    before(function(done){
+      CoinGeckoClient.exchanges.exchangesTickerById({
+        id : 'binance',
+        coin_ids:'avalanche-2'
+      }).then((data)=>{
+        this.data = data;
+        done();
+      })
+    })
+    shared.shouldBeAValidRequest(this.data)
+  })
+
+})
