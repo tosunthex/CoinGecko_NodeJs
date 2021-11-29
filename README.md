@@ -12,7 +12,7 @@ npm i coingecko-api-pro
 
 ```javascript
 //1. Import coingeckojs
-const CoinGecko = require('npm i coingecko-api-pro');
+const CoinGecko = require('coingecko-api-pro');
 
 //2. Initiate the CoinGecko API Client
 const CoinGeckoClient = new CoinGecko();

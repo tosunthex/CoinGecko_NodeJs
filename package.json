@@ -3,9 +3,6 @@
   "version": "1.0.5",
   "description": "Coin Gecko Api Node js wrapper",
   "main": "index.js",
-  "scripts": {
-    "test": "Mocha"
-  },
   "keywords": [
     "coingecko",
     "cryptocurrency",
@@ -17,8 +14,7 @@
   "license": "ISC",
   "devDependencies": {},
   "directories": {
-    "lib": "lib",
-    "test": "tests"
+    "lib": "lib"
   },
   "repository": {
     "type": "git",
