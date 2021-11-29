@@ -10,18 +10,18 @@ Coin Gecko Api Node js wrapper
 npm i coingecko-api-pro
 ```
 
-```sh
-const CoinGecko = require("coingecko-pro-api-v3");
-const _client = new CoinGecko({
-    timeout:10000,
-    autoRetry:true
-})
-const ping = await _client.ping();
-```
+```javascript
+//1. Import coingeckojs
+const CoinGecko = require('coingeckojs');
 
-# Options
-timeout (optional): The http timeout, default 30s
-autoRetry (optional): Auto retry if the http response code is 429 - to many request
+//2. Initiate the CoinGecko API Client
+const CoinGeckoClient = new CoinGecko();
+
+//3. Make calls
+var func = async() => {
+  let data = await CoinGeckoClient.ping();
+};
+```
 
 
 ## Supported API method
