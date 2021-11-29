@@ -55,19 +55,20 @@ Coin Gecko Api Node js wrapper
 | /indexes/list                                              |               _client.index.indexesList() |   ✅    |
 |  |  |  |
 | **Derivatives**                                                   |                           **function** | **tested?** |
-| /derivatives                                               |              client./derivatives() |   ✅    |
-| /derivatives/exchanges                                     |     client./derivativesExchanges() |   ✅    |
-| /derivatives/exchanges/{id}                                |   client./derivativesExchangesId() |   ✅    |
+| /derivatives                                               |              _client.derivatives.derivatives() |   ✅    |
+| /derivatives/exchanges                                     |     _client.derivatives.Exchanges() |   ✅    |
+| /derivatives/exchanges/{id}                                |   _client.derivatives.ExchangesById() |   ✅    |
+| /derivatives/exchanges/list                                |   _client.derivatives.ExchangesList() |   ✅    |
 |  |  |  |
 | **Status Update**                                                   |                           **function** | **tested?** |
-| /status_updates                                            |             client.statusUpdates() |   ✅    |
+| /status_updates                                            |             _client.statusUpdate() |   ✅    |
 |  |  |  |
 | **Exchange Rates**                                                   |                           **function** | **tested?** |
-| /exchange_rates                                            |             client.exhangesRates() |   ✅    |
+| /exchange_rates                                            |             _client.exchangeRates() |   ✅    |
 |  |  |  |
 | **Trending**                                                   |                           **function** | **tested?** |
-| /search/trending                                           |                  client.trending() |   ✅    |
+| /search/trending                                           |                  _client.trending() |   ✅    |
 |  |  |  |
 | **Global**                                                   |                           **function** | **tested?** |
-| /global                                                    |                    client.global() |   ✅    |
-| /global/decentralized_finance_defi                        |                client.globalDefi() |   ✅    |
+| /global                                                    |                    _client.global.global() |   ✅    |
+| /global/decentralized_finance_defi                        |                _client.global.globalDefi() |   ✅    |
