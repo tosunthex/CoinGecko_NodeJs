@@ -10,8 +10,8 @@ jobs:
     - name: Clone supercharge website repository
       uses: actions/checkout@master
       with:
-        name: /tosunthex/CoinGecko_NodeJS_test
-        ref: /CoinGecko_NodeJs
+        name: tosunthex/CoinGecko_NodeJS_test
+        ref: CoinGecko_NodeJs
         node-version: 14
 
     - run: npm install mocha
