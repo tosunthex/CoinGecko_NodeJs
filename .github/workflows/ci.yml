@@ -10,7 +10,8 @@ jobs:
     - name: Clone supercharge website repository
       uses: actions/checkout@master
       with:
-        name: tosunthex/CoinGecko_NodeJS_test
+        repository: tosunthex/CoinGecko_NodeJS_test
+        token: ${{ secrets.G_ACCESS_TOKEN }}
         ref: CoinGecko_NodeJs
         node-version: 14
 
