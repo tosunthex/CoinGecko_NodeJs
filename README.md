@@ -1,4 +1,4 @@
-[![CI](https://github.com/tosunthex/CoinGecko_NodeJs/actions/workflows/ci.yml/badge.svg)](https://github.com/tosunthex/CoinGecko_NodeJs/actions/workflows/ci.yml)
+[![Run tests](https://github.com/tosunthex/CoinGecko_NodeJs/actions/workflows/ci.yml/badge.svg)](https://github.com/tosunthex/CoinGecko_NodeJs/actions/workflows/ci.yml)
 [![version](https://badgen.net/npm/v/coin-gecko-pro-api)](https://badgen.net/npm/v/coin-gecko-pro-api)
 
 # CoinGecko Api Pro NodeJs Wrapper
@@ -22,6 +22,9 @@ var func = async() => {
   let data = await CoinGeckoClient.ping();
 };
 ```
+
+You can also find the another sample usages and test files on the 
+- [Test Repository](https://github.com/tosunthex/CoinGecko_NodeJS_test)
 
 
 ## Supported API method

@@ -1,6 +1,6 @@
 {
   "name": "coingecko-api-pro",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "Coin Gecko Api Node js wrapper",
   "main": "index.js",
   "keywords": [
