@@ -13,7 +13,6 @@ jobs:
         repository: tosunthex/CoinGecko_NodeJS_test
         token: ${{ secrets.G_ACCESS_TOKEN }}
         ref: CoinGecko_NodeJs
-        node-version: 14
 
     - run: npm install mocha
     - run: npm install chai
