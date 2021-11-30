@@ -1,4 +1,4 @@
-[![CI](https://github.com/tosunthex/CoinGecko_NodeJs/actions/workflows/ci.yml/badge.svg)](https://github.com/tosunthex/CoinGecko_NodeJs/actions/workflows/ci.yml)
+[![Run tests](https://github.com/tosunthex/CoinGecko_NodeJs/actions/workflows/ci.yml/badge.svg)](https://github.com/tosunthex/CoinGecko_NodeJs/actions/workflows/ci.yml)
 [![version](https://badgen.net/npm/v/coin-gecko-pro-api)](https://badgen.net/npm/v/coin-gecko-pro-api)
 
 # CoinGecko Api Pro NodeJs Wrapper
