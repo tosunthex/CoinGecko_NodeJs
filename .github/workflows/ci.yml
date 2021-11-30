@@ -23,7 +23,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: tosunthex/CoinGecko_NodeJS_test
-        ref: tests
+        path: tests
       
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
