@@ -23,6 +23,9 @@ var func = async() => {
 };
 ```
 
+You can also find the another sample usages and test files on the 
+- [Test Repository](https://github.com/tosunthex/CoinGecko_NodeJS_test)
+
 
 ## Supported API method
 
