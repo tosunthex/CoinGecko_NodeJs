@@ -1,5 +1,6 @@
-[![Run tests](https://github.com/tosunthex/CoinGecko_NodeJs/actions/workflows/ci.yml/badge.svg)](https://github.com/tosunthex/CoinGecko_NodeJs/actions/workflows/ci.yml)
-[![version](https://badgen.net/npm/v/coin-gecko-pro-api)](https://badgen.net/npm/v/coin-gecko-pro-api)
+<span><a href="https://github.com/tosunthex/CoinGecko_NodeJs/actions/workflows/ci.yml"><img src="https://github.com/tosunthex/CoinGecko_NodeJs/actions/workflows/ci.yml/badge.svg" alt="GitHub Actions Build Status"></a></span>
+<span><a href="https://npmjs.org/package/coingecko-api-pro" title="View this project on NPM">![npm](https://img.shields.io/npm/v/coingecko-api-pro)</a></span>
+<span><a href="https://npmjs.org/package/coingecko-api-pro" title="View this project on NPM"><img alt="npm" src="https://img.shields.io/npm/dw/coingecko-api-pro"></a></span>
 
 # CoinGecko Api Pro NodeJs Wrapper
 Coin Gecko Api Node js wrapper 
