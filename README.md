@@ -1,7 +1,7 @@
 <span><a href="https://github.com/tosunthex/CoinGecko_NodeJs/actions/workflows/ci.yml"><img src="https://github.com/tosunthex/CoinGecko_NodeJs/actions/workflows/ci.yml/badge.svg" alt="GitHub Actions Build Status"></a></span>
 <span><a href="https://npmjs.org/package/coingecko-api-pro" title="View this project on NPM">![npm](https://img.shields.io/npm/v/coingecko-api-pro)</a></span>
 <span><a href="https://npmjs.org/package/coingecko-api-pro" title="View this project on NPM"><img alt="npm" src="https://img.shields.io/npm/dw/coingecko-api-pro"></a></span>
-
+<span>[![Codacy Badge](https://app.codacy.com/project/badge/Grade/e5ed9c178a5a4d4e84c06492b9cb091a)](https://www.codacy.com/gh/tosunthex/CoinGecko_NodeJs/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tosunthex/CoinGecko_NodeJs&amp;utm_campaign=Badge_Grade)</span>
 # CoinGecko Api Pro NodeJs Wrapper
 Coin Gecko Api Node js wrapper 
 - [Official document here](https:/www.coingecko.com/api/documentations/v3)
