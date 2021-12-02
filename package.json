@@ -1,6 +1,6 @@
 {
   "name": "coingecko-api-pro",
-  "version": "1.0.7",
+  "version": "2.1.1",
   "description": "Coin Gecko Api Node js wrapper",
   "main": "index.js",
   "keywords": [
@@ -8,11 +8,15 @@
     "cryptocurrency",
     "api",
     "api-wrapper",
-    "dependency-less"
+    "dependency-less",
+    "no-dependencies",
+    "api-client"
   ],
-  "author": "Levent Saatci",
-  "license": "ISC",
-  "devDependencies": {},
+  "scripts": {
+    "test": "nyc mocha --no-timeouts --reporter spec \"./test/lib/*.js\" \"./test/lib/**/*.js\""
+  },
+  "author": "Levent Saatci, leventsaatci@hotmail.com",
+  "license": "MIT",
   "directories": {
     "lib": "lib"
   },
@@ -24,5 +28,9 @@
     "url": "https://github.com/tosunthex/CoinGecko_NodeJs/issues"
   },
   "homepage": "https://github.com/tosunthex/CoinGecko_NodeJs#readme",
-  "dependencies": {}
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3",
+    "nyc": "^15.1.0"
+  }
 }

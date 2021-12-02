@@ -19,12 +19,6 @@ jobs:
     - name: Ensure docs directory
       run: mkdir tests
     
-    - name: Clone test repository
-      uses: actions/checkout@v2
-      with:
-        repository: tosunthex/CoinGecko_NodeJS_test
-        path: tests
-      
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
@@ -35,4 +29,5 @@ jobs:
       
     - run: npm install mocha
     - run: npm install chai
+    - run: npm install nyc
     - run: node_modules/mocha/bin/mocha tests/CoinGecko.tests.js
