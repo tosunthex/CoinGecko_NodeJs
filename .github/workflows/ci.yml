@@ -30,4 +30,4 @@ jobs:
     - run: npm install mocha
     - run: npm install chai
     - run: npm install nyc
-    - run: node_modules/mocha/bin/mocha tests/CoinGecko.tests.js
+    - run: npm test
