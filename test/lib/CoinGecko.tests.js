@@ -163,7 +163,7 @@ describe('Coins',function() {
     shared.shouldBeAValidRequest();
   })   
 
-  describe('Status Update By Id',function(){
+/*   describe('Status Update By Id',function(){
     before(function(done){
       _client.coins.statusUpdateById({
         id : 'ethereum'
@@ -174,7 +174,7 @@ describe('Coins',function() {
       })
 
     shared.shouldBeAValidRequest();
-  })   
+  })    */
 
   describe('OHLC By Id',function(){
     before(function(done){
@@ -324,7 +324,7 @@ describe('Exchanges',function(){
     })
     shared.shouldBeAValidRequest(this.data)
   })
-
+/* 
   describe('Get Status Updates',function(){
     before(function(done){
       _client.exchanges.statusUpdatesById({
@@ -336,12 +336,12 @@ describe('Exchanges',function(){
     })
     shared.shouldBeAValidRequest(this.data)
   })
-
+ */
   describe('Get Volume Chart',function(){
     before(function(done){
       _client.exchanges.volumeChartById({
         id : 'binance',
-        coin_ids:'avalanche-2'
+        days: 1
       }).then((data)=>{
         this.data = data;
         done();
@@ -352,7 +352,7 @@ describe('Exchanges',function(){
 
 })
 
-
+/* 
 describe('Finance',function(){
   
   describe('Finance Platforms',function(){
@@ -376,7 +376,7 @@ describe('Finance',function(){
   })
 
 })
-
+ */
 describe('Index',function(){
   
   describe('List all Market Indexes',function(){
@@ -457,7 +457,7 @@ describe('Derivatives',function(){
     shared.shouldBeAValidRequest(this.data)
   })
 })
-
+/* 
 describe('Status Update',function(){
   
     before(function(done){
@@ -468,7 +468,7 @@ describe('Status Update',function(){
     })
     shared.shouldBeAValidRequest(this.data)
 })
-
+ */
 describe('Exchange Rates',function(){  
   
     before(function(done){
