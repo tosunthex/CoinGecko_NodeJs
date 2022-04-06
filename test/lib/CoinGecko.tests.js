@@ -526,3 +526,15 @@ describe('Companies',function(){
   shared.shouldBeAValidRequest(this.data)
 })
 
+describe('Search',function(){
+  before(function(done){
+    _client.search.coinsCategoriesMarkets({
+      query:'bitcoin'
+    }).then((data)=>{
+      this.data = data;
+      done();
+    })
+  })
+  shared.shouldBeAValidRequest(this.data)
+})
+
